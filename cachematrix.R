@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) { #taking the matrix as an input
   inv_matrix <- NULL
 
 #set the value of the Matrix
@@ -29,7 +29,7 @@ cacheSolve <- function(x, ...) {
 #get the value of the invertible matrix from the makeCacheMatrix function
           inv_matrix <- x$get_inverse()
         if(!is.null(inv_matrix)) {                       #if inverse matrix is not NULL
-          message("Cached data")                       #Type message: data 
+          message("Cached data")                       #Type message: Cashed data 
           return(inv_matrix)                             #return the invertible matrix
         }
 
